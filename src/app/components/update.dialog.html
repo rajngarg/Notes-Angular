@@ -1,0 +1,21 @@
+<mdc-dialog>
+  <mdc-dialog-container>
+    <mdc-dialog-surface>
+
+      <mdc-dialog-content>
+        <input class="inputTitle" [(ngModel)]="title" placeholder="Title" />
+
+        <div style="background-color: #eeeeee;height: 100%;border-radius: 4px;margin-top: 8px">
+          <textarea class="inputNote" [(ngModel)]="note" placeholder="Take a note..."></textarea>
+        </div>
+
+      </mdc-dialog-content>
+
+      <mdc-dialog-actions>
+        <button mdcDialogButton class="button" mdcDialogAction="close">Close</button>
+        <button mdcDialogButton class="button" (click)="updateNote()">Update</button>
+      </mdc-dialog-actions>
+
+    </mdc-dialog-surface>
+  </mdc-dialog-container>
+</mdc-dialog>

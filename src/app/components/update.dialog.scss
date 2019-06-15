@@ -1,0 +1,53 @@
+@import "~@angular-mdc/theme/material";
+
+@font-face {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans"), local("OpenSans"),
+        url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+            format("woff2");
+}
+
+@font-face {
+    font-family: "Product Sans Bold";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans"), local("OpenSans"),
+        url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+            format("woff2");
+}
+
+.inputCard {
+    @include mdc-card-shape-radius(8px);
+    padding: 8px;
+    position: relative;
+    margin: 8px 200px 8px 200px;
+}
+
+.button {
+    @include mdc-button-icon-color(#212121);
+    @include mdc-button-ink-color(#212121);
+    @include mdc-states(#212121);
+    color: #212121;
+}
+
+.inputTitle {
+    border: none;
+    margin: 4px;
+    font-family: Product Sans Bold;
+    outline: none;
+    font-size: 20px;
+}
+
+.inputNote {
+    border: none;
+    margin: 4px;
+    resize: none;
+    height: 100px;
+    width: 95%;
+    font-family: Product Sans;
+    background-color: #eeeeee;
+    font-size: 16px;
+    outline: none;
+}
